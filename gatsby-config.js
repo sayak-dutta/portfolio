@@ -1,4 +1,4 @@
-require('dotenv').config();
+require("dotenv").config();
 
 const { ACCESS_TOKEN, SPACE_ID, ANALYTICS_ID } = process.env;
 
@@ -14,7 +14,7 @@ const plugins = [
 
 if (ANALYTICS_ID) {
   plugins.push({
-    resolve: 'gatsby-plugin-google-analytics',
+    resolve: "gatsby-plugin-google-analytics",
     options: {
       trackingId: ANALYTICS_ID,
     },
